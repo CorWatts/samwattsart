@@ -1,0 +1,23 @@
+---
+layout: default
+title: Blog | Tags
+banner_color: 54787D
+---
+<h3>Tags</h3>
+{% for tag in site.tags %}
+<div class="box">
+	<h4><a name="{{ tag | first | cgi_escape }}">{{ tag | first }}</a></h4>
+	<ul class="list">	
+	{% for posts in tag %}
+      		{% for post in posts %}
+		{% if post.url %}
+			<li class="indented"><a href="{{ post.url }}">{{ post.title }}</a> on {{ post.date | date: '%d %b, %Y' }}</li>
+		{% endif %}
+		{% endfor %}
+	{% endfor %}
+	</ul>
+</div>				
+{% endfor %}
+	
+
+
