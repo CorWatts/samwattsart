@@ -1,11 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
 	<head>
-<<<<<<< HEAD
-		<title>Samantha Watts</title>
-=======
 		<title>Sam Watts</title>
->>>>>>> 78cf26e11df51f1d892f7ac5a785347578f84494
 		<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
 		<meta name="description" content="The personal website and portfolio of Samantha Watts." />
 		<meta http-equiv="content-language" content="en" />
@@ -13,11 +9,18 @@
 		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 		<link rel="stylesheet" type="text/css" href="/css/screen.css" />
 		<link href='http://fonts.googleapis.com/css?family=Dosis:400,600' rel='stylesheet' type='text/css'>
-
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js" type="text/javascript"></script>
-		
+		<script src="/js/jquery.color.plus-names.2.1.1.min.js" type="text/javascript"></script>	
+
 		<script type="text/javascript">
 			$(document).ready(function() {
+				$("a").hover(
+				    function() {
+					$(this).animate({ color: "#CF2127" }, 'fast');
+				    },function() {
+					$(this).animate({ color: "white" }, 'fast');
+				    }
+				);
 			});
 
 			// google analytics
@@ -25,67 +28,22 @@
 		</script>
 	</head>
 	<body>
-<<<<<<< HEAD
 		<div id="mainContainer">
 			<div id="sidebar">
 				<h1 class="name">Samantha Watts</h1>
-				<ul class="nav">
-					<li><a href="about/">about</a></li>
-					<li><a href="resume/">resume</a></li>
-					<li><a href="contact/">contact</a></li>
+				<ul id="nav">
+					<li><a class="nounderline" href="about/">about</a></li>
+					<li><a class="nounderline" href="resume/">resume</a></li>
+					<li><a class="nounderline" href="contact/">contact</a></li>
 				</ul>
 			</div>
-=======
-		<div id="topBanner" style="background-color: #C6CCA5">
-			<h1 id="bannerText">hi. i'm sam.</h1>
-		</div>
-	
-		<div id="navbar">
-		<ul class="kwicks horizontal" >
-			<li id="kwick_1">
-				<a class="navInnerLinkContainer" href="/">
-				<span class='navTitle'>about me</span><br />
-				<span class='navBlurb'>who I am and where I've been</span>
-				</a>
-			</li>
-			<li id="kwick_2">
-				<a class="navInnerLinkContainer" href="/resume">
-					<span class='navTitle'>resume</span><br />
-					<span class='navBlurb'>my resume and things I've done</span>
-				</a>
-			</li>
-			<li id="kwick_3">
-				<a class="navInnerLinkContainer" href="/projects">
-					<span class='navTitle'>projects</span><br />
-					<span class='navBlurb'>personal projects I'm involved in</span>
-				</a>
-			</li>
-			<li id="kwick_4">
-				<a class="navInnerLinkContainer" href="/blog">
-					<span class='navTitle'>blog</span><br />
-					<span class='navBlurb'>a repository for my thoughts</span>
-				</a>
-			</li>
-			<li id="kwick_5">
-				<a class="navInnerLinkContainer" href="/contactme">
-					<span class='navTitle'>contact me</span><br />
-					<span class='navBlurb'>need to reach me? here you go</span>
-				</a>
-			</li>
-		</ul>
-		<div style="clear: both;"></div>
-		</div>
+			<div id="content">
+				<div id="subnav">
+	<h1><a class="nounderline" href="/">art</a> <span class="red">&amp;</span> <a class="nounderline" href="design/">design</a></h1>
+</div>
 
->>>>>>> 78cf26e11df51f1d892f7ac5a785347578f84494
 
-		<div id="content">
-			<h1>This is sam's new site.</h1>
-<h3 class="contentTitle">bio</h3>
-<p class="contentText">My name is Corey Watts and I'm a web developer in Santa Barbara. I have a passion for computers and crafting beautiful web applications.  I recently graduated from Westmont College with a B.S. in Computer Science and I've put my degree to good use getting a job as a Web Architect with National Discount Merchant Services (<a href="http://ndmscorp.com">http://ndmscorp.com</a>). I'm one of only two developers, so I have my hand in every pot: I'm doing everything from server administration, to integration API programming, to creating full-on web applications. I am constantly switching hats at work which keeps me interested.  Most of my work involves developing an online payments application we've recently launched called PaidYet (<a href="http://www.paidyet.com">http://www.paidyet.com</a>).</p>
-
-<p class="contentText">I LOVE PHP, MVC, jQuery, SQL, and Linux -- these are the tools I immerse myself in daily to get the job done.  I'm a LAMP Stack snob and I can't imagine developing in anything else, except maybe on a mac. My professors at Westmont ingrained in me a passion for elegant solutions, so in every piece of code I write I try to make it as simple and effective as possible. I truly believe that it's the little details that make or break a project, so I strive to get every part right.</p>
-
-		</div>
+			</div>
 			<div class="clear"></div>
 		</div>
 		<div id="footer">
@@ -94,6 +52,3 @@
 		</div>
 	</body>
 </html>
-
-
-
