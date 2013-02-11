@@ -11,10 +11,23 @@
 		<link href='http://fonts.googleapis.com/css?family=Dosis:400,600' rel='stylesheet' type='text/css'>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js" type="text/javascript"></script>
 		<script src="/js/jquery.color.plus-names.2.1.1.min.js" type="text/javascript"></script>	
+		<!-- Add fancyBox -->
+		<link rel="stylesheet" href="/fancybox/jquery.fancybox.css?v=2.1.4" type="text/css" media="screen" />
+		<script type="text/javascript" src="/fancybox/jquery.fancybox.pack.js?v=2.1.4"></script>
+
+		<!-- Optionally add helpers - button, thumbnail and/or media -->
+		<link rel="stylesheet" href="/fancybox/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+		<script type="text/javascript" src="/fancybox/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+		<script type="text/javascript" src="/fancybox/helpers/jquery.fancybox-media.js?v=1.0.5"></script>
+
+		<link rel="stylesheet" href="/fancybox/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+		<script type="text/javascript" src="/fancybox/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
 
 		<script type="text/javascript">
 			$(document).ready(function() {
-				$("a").hover(
+				$("a.fancybox").fancybox();
+
+				$("a.nounderline").hover(
 				    function() {
 					$(this).animate({ color: "#CF2127" }, 'fast');
 				    },function() {
@@ -30,7 +43,7 @@
 	<body>
 		<div id="mainContainer">
 			<div id="sidebar">
-				<h1 class="name">Samantha Watts</h1>
+				<h1 class="name"><a class="nounderline" href="/">Samantha Watts</a></h1>
 				<ul id="nav">
 					<li><a class="nounderline" href="about/">about</a></li>
 					<li><a class="nounderline" href="resume/">resume</a></li>
