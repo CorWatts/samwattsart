@@ -7,10 +7,10 @@ a {color: white;}
 #content {width: 680px; margin: 10px; padding: 20px; float: right;}
 #subnav {margin-top: 60px;}
 
-#main img.tile {width: 100px; height: 100px; margin: 5px;}
+#main img.tile {width: 150px; height: 150px; margin: 5px;}
 
 	#subnav h1 {letter-spacing: 8px; font-weight: 400;}
-#footer p.footerText {text-align: center; margin: 0px;}
+#footer p.footerText {text-align: center; margin: 0px; font-size: 14px;}
 
 .clear {clear: both;}
 .red {color: #cf2127;}
