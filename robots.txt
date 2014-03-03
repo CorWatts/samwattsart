@@ -1,3 +1,2 @@
 User-agent: *
-Sitemap: http://corwatts.com/sitemap.xml
-Disallow: /code/calendar
+Sitemap: http://samwattsart.com/sitemap.xml

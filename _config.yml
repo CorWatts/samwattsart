@@ -1,1 +1,2 @@
 exclude: [rakefile]
+markdown: rdiscount

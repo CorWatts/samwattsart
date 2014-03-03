@@ -1,8 +1,9 @@
 body {background-color: black; color: white; font-family: "Dosis", "Helvetica", "Sans-serif"; font-weight: 400;}
 a {color: white;}
 #mainContainer {width: 980px; height: auto; margin: 0px auto 0px auto;}
-#sidebar {width: 200px; margin: 10px; float: left; text-align: right;}
-	h1.name {text-transform: uppercase; letter-spacing: 8px; font-weight: 600;}
+#sidebar {width: 210px; margin: 10px; float: left; text-align: right;}
+	h1.name {text-transform: uppercase; letter-spacing: 8px; font-weight: 600; margin-right:-8px;}
+	h2.navigation {font-size: 16px; font-weight: 400; margin: 0px;}
 	ul#nav {list-style-type: none;}
 #content {width: 680px; margin: 10px; padding: 20px; float: right;}
 #subnav {margin-top: 60px;}
