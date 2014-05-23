@@ -8,6 +8,8 @@ a {color: white;}
 #content {width: 680px; margin: 10px; padding: 20px; float: right;}
 #subnav {margin-top: 60px;}
 #contact {font-size: 20px;}
+#job-list {list-style-type: none;}
+    #job-list li {margin: 1em 0 1em 0;}
 
 #main img.tile {width: 150px; height: 150px; margin: 5px;}
 
